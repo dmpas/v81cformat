@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодНаименование" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеExtendedTooltip" id="22"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="23"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ОграничениеПоСотруднику" id="9">
+			<DataPath>Объект.ОграничениеПоСотруднику</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОграничениеПоСотрудникуКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ОграничениеПоСотрудникуExtendedTooltip" id="25"/>
+		</InputField>
+		<InputField name="ЗначениеСкидки" id="7">
+			<DataPath>Объект.ЗначениеСкидки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ЗначениеСкидкиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЗначениеСкидкиExtendedTooltip" id="26"/>
+		</InputField>
+		<CheckBoxField name="ТолькоАдминистратор" id="5">
+			<DataPath>Объект.ТолькоАдминистратор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ТолькоАдминистраторКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ТолькоАдминистраторExtendedTooltip" id="27"/>
+		</CheckBoxField>
+		<InputField name="КатегорияДоступности" id="11">
+			<DataPath>Объект.КатегорияДоступности</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КатегорияДоступностиКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="КатегорияДоступностиExtendedTooltip" id="28"/>
+		</InputField>
+		<InputField name="ПредопределеннаяПричина" id="20">
+			<DataPath>Объект.ПредопределеннаяПричина</DataPath>
+			<ContextMenu name="ПредопределеннаяПричинаКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ПредопределеннаяПричинаExtendedTooltip" id="29"/>
+		</InputField>
+		<CheckBoxField name="НеПоказыватьНаКассе" id="16">
+			<DataPath>Объект.НеПоказыватьНаКассе</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="НеПоказыватьНаКассеКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="НеПоказыватьНаКассеExtendedTooltip" id="30"/>
+		</CheckBoxField>
+		<CheckBoxField name="СкидкаНаСтроку" id="18">
+			<DataPath>Объект.СкидкаНаСтроку</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="СкидкаНаСтрокуКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="СкидкаНаСтрокуExtendedTooltip" id="31"/>
+		</CheckBoxField>
+		<InputField name="КодИнтершоп" id="13">
+			<DataPath>Объект.КодИнтершоп</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодИнтершопКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="КодИнтершопExtendedTooltip" id="32"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПричиныСкидок</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодНаименование" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеExtendedTooltip" id="59"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="60"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="61"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа1" id="55">
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="62"/>
+			<ChildItems>
+				<Page name="ГруппаРасписание" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расписание</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расписание</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаРасписаниеExtendedTooltip" id="63"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаРегламентноеЗадание" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регламентное задание</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа регламентное задание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРегламентноеЗаданиеExtendedTooltip" id="64"/>
+							<ChildItems>
+								<CheckBoxField name="ИспользоватьРегламентныеЗадания" id="7">
+									<DataPath>Объект.ИспользоватьРегламентныеЗадания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьРегламентныеЗаданияКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ИспользоватьРегламентныеЗаданияExtendedTooltip" id="65"/>
+								</CheckBoxField>
+								<InputField name="РегламентноеЗадание" id="9">
+									<DataPath>Объект.РегламентноеЗадание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РегламентноеЗаданиеКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="РегламентноеЗаданиеExtendedTooltip" id="66"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ДинамическиИзменятьИнтервалМеждуОбменами" id="11">
+							<DataPath>Объект.ДинамическиИзменятьИнтервалМеждуОбменами</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДинамическиИзменятьИнтервалМеждуОбменамиКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ДинамическиИзменятьИнтервалМеждуОбменамиExtendedTooltip" id="67"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСобытия" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа события</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа события</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСобытияExtendedTooltip" id="68"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаПользовательПрава" id="54">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользователь права</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользователь права</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПользовательПраваExtendedTooltip" id="69"/>
+							<ChildItems>
+								<InputField name="Ответственный" id="13">
+									<DataPath>Объект.Ответственный</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтветственныйКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="70"/>
+								</InputField>
+								<CheckBoxField name="ВыполнятьДействияПодПолнымиПравами" id="5">
+									<DataPath>Объект.ВыполнятьДействияПодПолнымиПравами</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВыполнятьДействияПодПолнымиПравамиКонтекстноеМеню" id="6"/>
+									<ExtendedTooltip name="ВыполнятьДействияПодПолнымиПравамиExtendedTooltip" id="71"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="КаждыйЗапускПрограммы" id="15">
+							<DataPath>Объект.КаждыйЗапускПрограммы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КаждыйЗапускПрограммыКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="КаждыйЗапускПрограммыExtendedTooltip" id="72"/>
+						</CheckBoxField>
+						<CheckBoxField name="КаждоеЗавершениеРаботыСПрограммой" id="17">
+							<DataPath>Объект.КаждоеЗавершениеРаботыСПрограммой</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="КаждоеЗавершениеРаботыСПрограммойКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="КаждоеЗавершениеРаботыСПрограммойExtendedTooltip" id="73"/>
+						</CheckBoxField>
+						<InputField name="КаталогПроверкиДоступности" id="19">
+							<DataPath>Объект.КаталогПроверкиДоступности</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КаталогПроверкиДоступностиКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КаталогПроверкиДоступностиExtendedTooltip" id="74"/>
+						</InputField>
+						<InputField name="ВыполнятьОбменПриПоявленииФайла" id="21">
+							<DataPath>Объект.ВыполнятьОбменПриПоявленииФайла</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ВыполнятьОбменПриПоявленииФайлаКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ВыполнятьОбменПриПоявленииФайлаExtendedTooltip" id="75"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДополнительно" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДополнительноExtendedTooltip" id="76"/>
+					<ChildItems>
+						<InputField name="КоличествоЭлементовВТранзакцииНаВыгрузкуДанных" id="23">
+							<DataPath>Объект.КоличествоЭлементовВТранзакцииНаВыгрузкуДанных</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КоличествоЭлементовВТранзакцииНаВыгрузкуДанныхКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="КоличествоЭлементовВТранзакцииНаВыгрузкуДанныхExtendedTooltip" id="77"/>
+						</InputField>
+						<InputField name="КоличествоЭлементовВТранзакцииНаЗагрузкуДанных" id="25">
+							<DataPath>Объект.КоличествоЭлементовВТранзакцииНаЗагрузкуДанных</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КоличествоЭлементовВТранзакцииНаЗагрузкуДанныхКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="КоличествоЭлементовВТранзакцииНаЗагрузкуДанныхExtendedTooltip" id="78"/>
+						</InputField>
+						<InputField name="УчетнаяЗаписьОтправкиСообщенияОбОшибке" id="27">
+							<DataPath>Объект.УчетнаяЗаписьОтправкиСообщенияОбОшибке</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="УчетнаяЗаписьОтправкиСообщенияОбОшибкеКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="УчетнаяЗаписьОтправкиСообщенияОбОшибкеExtendedTooltip" id="79"/>
+						</InputField>
+						<InputField name="АдресДляОтправкиСообщенийОбОшибке" id="29">
+							<DataPath>Объект.АдресДляОтправкиСообщенийОбОшибке</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="АдресДляОтправкиСообщенийОбОшибкеКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="АдресДляОтправкиСообщенийОбОшибкеExtendedTooltip" id="80"/>
+						</InputField>
+						<Table name="СообщенияНеЯвляющиесяОшибками" id="45">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СообщенияНеЯвляющиесяОшибками</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СообщенияНеЯвляющиесяОшибкамиКонтекстноеМеню" id="46"/>
+							<AutoCommandBar name="СообщенияНеЯвляющиесяОшибкамиКоманднаяПанель" id="47"/>
+							<ExtendedTooltip name="СообщенияНеЯвляющиесяОшибкамиExtendedTooltip" id="81"/>
+							<SearchStringAddition name="СообщенияНеЯвляющиесяОшибкамиSearchString" id="82">
+								<Source>
+									<lf:elementId>45</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="СообщенияНеЯвляющиесяОшибкамиSearchStringContextMenu" id="83"/>
+								<ExtendedTooltip name="СообщенияНеЯвляющиесяОшибкамиSearchStringExtendedTooltip" id="84"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СообщенияНеЯвляющиесяОшибкамиViewStatus" id="85">
+								<Source>
+									<lf:elementId>45</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="СообщенияНеЯвляющиесяОшибкамиViewStatusContextMenu" id="86"/>
+								<ExtendedTooltip name="СообщенияНеЯвляющиесяОшибкамиViewStatusExtendedTooltip" id="87"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СообщенияНеЯвляющиесяОшибкамиSearchControl" id="88">
+								<Source>
+									<lf:elementId>45</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="СообщенияНеЯвляющиесяОшибкамиSearchControlContextMenu" id="89"/>
+								<ExtendedTooltip name="СообщенияНеЯвляющиесяОшибкамиSearchControlExtendedTooltip" id="90"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СообщенияНеЯвляющиесяОшибкамиНомерСтроки" id="48">
+									<DataPath>Объект.СообщенияНеЯвляющиесяОшибками.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СообщенияНеЯвляющиесяОшибкамиНомерСтрокиКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="СообщенияНеЯвляющиесяОшибкамиНомерСтрокиExtendedTooltip" id="91"/>
+								</LabelField>
+								<InputField name="СообщенияНеЯвляющиесяОшибкамиТекстСообщения" id="50">
+									<DataPath>Объект.СообщенияНеЯвляющиесяОшибками.ТекстСообщения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СообщенияНеЯвляющиесяОшибкамиТекстСообщенияКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="СообщенияНеЯвляющиесяОшибкамиТекстСообщенияExtendedTooltip" id="92"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<Pages name="Страницы" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыExtendedTooltip" id="93"/>
+			<ChildItems>
+				<Page name="ГруппаНастройкиОбмена" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки обмена</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаНастройкиОбменаExtendedTooltip" id="94"/>
+					<ChildItems>
+						<Table name="НастройкиОбмена" id="35">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.НастройкиОбмена</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="НастройкиОбменаКонтекстноеМеню" id="36"/>
+							<AutoCommandBar name="НастройкиОбменаКоманднаяПанель" id="37"/>
+							<ExtendedTooltip name="НастройкиОбменаExtendedTooltip" id="95"/>
+							<SearchStringAddition name="НастройкиОбменаSearchString" id="96">
+								<Source>
+									<lf:elementId>35</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="НастройкиОбменаSearchStringContextMenu" id="97"/>
+								<ExtendedTooltip name="НастройкиОбменаSearchStringExtendedTooltip" id="98"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="НастройкиОбменаViewStatus" id="99">
+								<Source>
+									<lf:elementId>35</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="НастройкиОбменаViewStatusContextMenu" id="100"/>
+								<ExtendedTooltip name="НастройкиОбменаViewStatusExtendedTooltip" id="101"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="НастройкиОбменаSearchControl" id="102">
+								<Source>
+									<lf:elementId>35</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="НастройкиОбменаSearchControlContextMenu" id="103"/>
+								<ExtendedTooltip name="НастройкиОбменаSearchControlExtendedTooltip" id="104"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="НастройкиОбменаНомерСтроки" id="38">
+									<DataPath>Объект.НастройкиОбмена.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НастройкиОбменаНомерСтрокиКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="НастройкиОбменаНомерСтрокиExtendedTooltip" id="105"/>
+								</LabelField>
+								<InputField name="НастройкиОбменаНастройкаОбмена" id="40">
+									<DataPath>Объект.НастройкиОбмена.НастройкаОбмена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НастройкиОбменаНастройкаОбменаКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="НастройкиОбменаНастройкаОбменаExtendedTooltip" id="106"/>
+								</InputField>
+								<InputField name="НастройкиОбменаВыполняемоеДействие" id="42">
+									<DataPath>Объект.НастройкиОбмена.ВыполняемоеДействие</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НастройкиОбменаВыполняемоеДействиеКонтекстноеМеню" id="43"/>
+									<ExtendedTooltip name="НастройкиОбменаВыполняемоеДействиеExtendedTooltip" id="107"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСообщенияНеЯвляющиесяОшибками" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщения не являющиеся ошибками</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаСообщенияНеЯвляющиесяОшибкамиExtendedTooltip" id="108"/>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="31">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="109"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НастройкиВыполненияОбмена</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

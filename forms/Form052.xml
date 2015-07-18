@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="28"/>
+			<SearchStringAddition name="СписокSearchString" id="29">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="30"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="31"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="32">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="33"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="34"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="35">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="36"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="37"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Период" id="4">
+					<DataPath>Список.Period</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПериодExtendedTooltip" id="38"/>
+				</LabelField>
+				<LabelField name="Пользователь" id="6">
+					<DataPath>Список.Пользователь</DataPath>
+					<ContextMenu name="ПользовательКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ПользовательExtendedTooltip" id="39"/>
+				</LabelField>
+				<LabelField name="Магазин" id="8">
+					<DataPath>Список.Магазин</DataPath>
+					<ContextMenu name="МагазинКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="МагазинExtendedTooltip" id="40"/>
+				</LabelField>
+				<LabelField name="КодУзла" id="10">
+					<DataPath>Список.КодУзла</DataPath>
+					<ContextMenu name="КодУзлаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КодУзлаExtendedTooltip" id="41"/>
+				</LabelField>
+				<LabelField name="Номенклатура" id="12">
+					<DataPath>Список.Номенклатура</DataPath>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="НоменклатураExtendedTooltip" id="42"/>
+				</LabelField>
+				<LabelField name="Количество" id="14">
+					<DataPath>Список.Количество</DataPath>
+					<ContextMenu name="КоличествоКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КоличествоExtendedTooltip" id="43"/>
+				</LabelField>
+				<LabelField name="Цена" id="16">
+					<DataPath>Список.Цена</DataPath>
+					<ContextMenu name="ЦенаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ЦенаExtendedTooltip" id="44"/>
+				</LabelField>
+				<LabelField name="Сумма" id="18">
+					<DataPath>Список.Сумма</DataPath>
+					<ContextMenu name="СуммаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СуммаExtendedTooltip" id="45"/>
+				</LabelField>
+				<LabelField name="Продавец" id="20">
+					<DataPath>Список.Продавец</DataPath>
+					<ContextMenu name="ПродавецКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПродавецExtendedTooltip" id="46"/>
+				</LabelField>
+				<LabelField name="Пояснение" id="22">
+					<DataPath>Список.Пояснение</DataPath>
+					<ContextMenu name="ПояснениеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПояснениеExtendedTooltip" id="47"/>
+				</LabelField>
+				<LabelField name="ПричинаОтмены" id="24">
+					<DataPath>Список.ПричинаОтмены</DataPath>
+					<ContextMenu name="ПричинаОтменыКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ПричинаОтменыExtendedTooltip" id="48"/>
+				</LabelField>
+				<CheckBoxField name="ОтменаЧекаЦеликом" id="26">
+					<DataPath>Список.ОтменаЧекаЦеликом</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтменаЧекаЦеликомКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ОтменаЧекаЦеликомExtendedTooltip" id="49"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.РегистрацияОтменыПродажи</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

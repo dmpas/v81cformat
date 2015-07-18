@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="v81cformat" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/v81cformat" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/v81cformat" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="`pkg-config --cflags libxml++-2.6`" />
+			<Add directory="./src/" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config --libs libxml++-2.6`" />
+			<Add library="boost_system" />
+			<Add library="boost_filesystem" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="src/8.1/data-composition-system/common.hxx" />
+		<Unit filename="src/8.1/data-composition-system/composition-template.hxx" />
+		<Unit filename="src/8.1/data-composition-system/core.hxx" />
+		<Unit filename="src/8.1/data-composition-system/details.hxx" />
+		<Unit filename="src/8.1/data-composition-system/result.hxx" />
+		<Unit filename="src/8.1/data-composition-system/settings.hxx" />
+		<Unit filename="src/8.1/data/core" />
+		<Unit filename="src/8.1/data/core.hxx" />
+		<Unit filename="src/8.1/data/core/Arbitrary.h" />
+		<Unit filename="src/8.1/data/core/Boolean.h" />
+		<Unit filename="src/8.1/data/core/Number.h" />
+		<Unit filename="src/8.1/data/core/Strings.h" />
+		<Unit filename="src/8.1/data/enterprise.hxx" />
+		<Unit filename="src/8.1/data/ui.hxx" />
+		<Unit filename="src/8.1/xdto.hxx" />
+		<Unit filename="src/8.2/data/chart.hxx" />
+		<Unit filename="src/8.2/data/data-analysis.hxx" />
+		<Unit filename="src/8.2/data/formatted-document.hxx" />
+		<Unit filename="src/8.2/data/geo.hxx" />
+		<Unit filename="src/8.2/data/graphscheme.hxx" />
+		<Unit filename="src/8.2/data/spreadsheet.hxx" />
+		<Unit filename="src/8.2/data/test.hxx" />
+		<Unit filename="src/8.2/managed-application/cmi.hxx" />
+		<Unit filename="src/8.2/managed-application/core.hxx" />
+		<Unit filename="src/8.2/managed-application/debuggerWebClient.hxx" />
+		<Unit filename="src/8.2/managed-application/logform.hxx" />
+		<Unit filename="src/8.2/managed-application/logform/layouter.hxx" />
+		<Unit filename="src/8.2/managed-application/modules.hxx" />
+		<Unit filename="src/8.2/uobjects.hxx" />
+		<Unit filename="src/8.3/data/ext.hxx" />
+		<Unit filename="src/8.3/data/planner.hxx" />
+		<Unit filename="src/8.3/xcf/logform.hxx" />
+		<Unit filename="src/8.3/xcf/logform/Form.h" />
+		<Unit filename="src/render/simple_html.cpp" />
+		<Unit filename="src/render/simple_html.h" />
+		<Unit filename="src/render/simple_string.cpp" />
+		<Unit filename="src/render/simple_string.h" />
+		<Unit filename="src/xml/enums.cxx" />
+		<Unit filename="src/xml/enums.hxx" />
+		<Unit filename="src/xml/serializer.cpp" />
+		<Unit filename="src/xml/serializer.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

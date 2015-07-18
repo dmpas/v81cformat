@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Группа" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ГруппаExtendedTooltip" id="54"/>
+			<ChildItems>
+				<Page name="Основное" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновноеExtendedTooltip" id="55"/>
+					<ChildItems>
+						<InputField name="Код" id="3">
+							<DataPath>Объект.Code</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="КодExtendedTooltip" id="56"/>
+						</InputField>
+						<InputField name="Наименование" id="5">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НаименованиеExtendedTooltip" id="57"/>
+						</InputField>
+						<UsualGroup name="НомераСообщений" id="7">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номера сообщений</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номера сообщений</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="НомераСообщенийExtendedTooltip" id="58"/>
+							<ChildItems>
+								<InputField name="НомерПринятого" id="8">
+									<DataPath>Объект.ReceivedNo</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="НомерПринятогоКонтекстноеМеню" id="9"/>
+									<ExtendedTooltip name="НомерПринятогоExtendedTooltip" id="59"/>
+								</InputField>
+								<InputField name="НомерОтправленного" id="10">
+									<DataPath>Объект.SentNo</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ContextMenu name="НомерОтправленногоКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="НомерОтправленногоExtendedTooltip" id="60"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="НастройкаФильтровРегистрации" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка фильтров регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка фильтров регистрации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкаФильтровРегистрацииExtendedTooltip" id="61"/>
+					<ChildItems>
+						<InputField name="ДатаНачалаВыгрузкиДокументов" id="13">
+							<DataPath>Объект.ДатаНачалаВыгрузкиДокументов</DataPath>
+							<ContextMenu name="ДатаНачалаВыгрузкиДокументовКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ДатаНачалаВыгрузкиДокументовExtendedTooltip" id="62"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="НастройкаСоответствий" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка соответствий</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройка соответствий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкаСоответствийExtendedTooltip" id="63"/>
+					<ChildItems>
+						<UsualGroup name="НастройкаСоответствийАналитикиОбмена" id="41">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка соответствий аналитики обмена</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка соответствий аналитики обмена</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="НастройкаСоответствийАналитикиОбменаExtendedTooltip" id="64"/>
+							<ChildItems>
+								<Table name="СоответствияАналитикиОбмена" id="28">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.СоответствияАналитикиОбмена</DataPath>
+									<SearchStringLocation>None</SearchStringLocation>
+									<ViewStatusLocation>None</ViewStatusLocation>
+									<SearchControlLocation>None</SearchControlLocation>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СоответствияАналитикиОбменаКонтекстноеМеню" id="29"/>
+									<AutoCommandBar name="СоответствияАналитикиОбменаКоманднаяПанель" id="30">
+										<ChildItems>
+											<Button name="ЗаполнитьНастройкиСоответствийАналитики" id="42">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ЗаполнитьНастройкиСоответствийАналитики</CommandName>
+												<Parameter xsi:nil="true"/>
+												<ExtendedTooltip name="ЗаполнитьНастройкиСоответствийАналитикиExtendedTooltip" id="65"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СоответствияАналитикиОбменаExtendedTooltip" id="66"/>
+									<SearchStringAddition name="СоответствияАналитикиОбменаSearchString" id="67">
+										<Source>
+											<lf:elementId>28</lf:elementId>
+											<lf:additionId>0</lf:additionId>
+										</Source>
+										<ContextMenu name="СоответствияАналитикиОбменаSearchStringContextMenu" id="68"/>
+										<ExtendedTooltip name="СоответствияАналитикиОбменаSearchStringExtendedTooltip" id="69"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СоответствияАналитикиОбменаViewStatus" id="70">
+										<Source>
+											<lf:elementId>28</lf:elementId>
+											<lf:additionId>1</lf:additionId>
+										</Source>
+										<ContextMenu name="СоответствияАналитикиОбменаViewStatusContextMenu" id="71"/>
+										<ExtendedTooltip name="СоответствияАналитикиОбменаViewStatusExtendedTooltip" id="72"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СоответствияАналитикиОбменаSearchControl" id="73">
+										<Source>
+											<lf:elementId>28</lf:elementId>
+											<lf:additionId>2</lf:additionId>
+										</Source>
+										<ContextMenu name="СоответствияАналитикиОбменаSearchControlContextMenu" id="74"/>
+										<ExtendedTooltip name="СоответствияАналитикиОбменаSearchControlExtendedTooltip" id="75"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="СоответствияАналитикиОбменаНомерСтроки" id="31">
+											<DataPath>Объект.СоответствияАналитикиОбмена.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СоответствияАналитикиОбменаНомерСтрокиКонтекстноеМеню" id="32"/>
+											<ExtendedTooltip name="СоответствияАналитикиОбменаНомерСтрокиExtendedTooltip" id="76"/>
+										</LabelField>
+										<InputField name="СоответствияАналитикиОбменаМагазин" id="33">
+											<DataPath>Объект.СоответствияАналитикиОбмена.Магазин</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СоответствияАналитикиОбменаМагазинКонтекстноеМеню" id="34"/>
+											<ExtendedTooltip name="СоответствияАналитикиОбменаМагазинExtendedTooltip" id="77"/>
+										</InputField>
+										<InputField name="СоответствияАналитикиОбменаОрганизация" id="35">
+											<DataPath>Объект.СоответствияАналитикиОбмена.Организация</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СоответствияАналитикиОбменаОрганизацияКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="СоответствияАналитикиОбменаОрганизацияExtendedTooltip" id="78"/>
+										</InputField>
+										<InputField name="СоответствияАналитикиОбменаОсновнойСклад" id="37">
+											<DataPath>Объект.СоответствияАналитикиОбмена.ОсновнойСклад</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СоответствияАналитикиОбменаОсновнойСкладКонтекстноеМеню" id="38"/>
+											<ExtendedTooltip name="СоответствияАналитикиОбменаОсновнойСкладExtendedTooltip" id="79"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ЗначенияПоУмолчанию" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значения по умолчанию</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значения по умолчанию</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ЗначенияПоУмолчаниюExtendedTooltip" id="80"/>
+					<ChildItems>
+						<UsualGroup name="АналитикаПокупкиИПродажиТоваров" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Аналитика покупки и продажи товаров</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Аналитика покупки и продажи товаров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="АналитикаПокупкиИПродажиТоваровExtendedTooltip" id="81"/>
+							<ChildItems>
+								<InputField name="ХозяйственнаяОперация_ВозвратТоваровПоставщику" id="49">
+									<DataPath>Объект.ХозяйственнаяОперация_ВозвратПоставщику</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хозяйственная операция при возврате поставщику</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceParameters>
+										<app:item name="Отбор.КодХозяйственнойОперации">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.КодыХозяйственныхОпераций.EnumValue.ВозвратПоставщику</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ХозяйственнаяОперация_ВозвратТоваровПоставщикуКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ХозяйственнаяОперация_ВозвратТоваровПоставщикуExtendedTooltip" id="82"/>
+									<Events>
+										<Event name="StartChoice">ХозяйственнаяОперация_ВозвратПоставщикуНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ХозяйственнаяОперация_ВозвратОтПокупателя" id="51">
+									<DataPath>Объект.ХозяйственнаяОперация_ВозвратОтПокупателя</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хозяйственная операция при возврате от покупателя</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceParameters>
+										<app:item name="Отбор.КодХозяйственнойОперации">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.КодыХозяйственныхОпераций.EnumValue.ВозвратОтПокупателя</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ХозяйственнаяОперация_ВозвратОтПокупателяКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="ХозяйственнаяОперация_ВозвратОтПокупателяExtendedTooltip" id="83"/>
+									<Events>
+										<Event name="StartChoice">ХозяйственнаяОперация_ВозвратОтПокупателяНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="АналитикаСкладскихОпераций" id="44">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Аналитика складских операций</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Аналитика складских операций</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="АналитикаСкладскихОперацийExtendedTooltip" id="84"/>
+							<ChildItems>
+								<InputField name="ХозяйственнаяОперация_ОприходованиеТоваров" id="45">
+									<DataPath>Объект.ХозяйственнаяОперация_ОприходованиеТоваров</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хозяйственная операция при оприходовании товаров</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceParameters>
+										<app:item name="Отбор.КодХозяйственнойОперации">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.КодыХозяйственныхОпераций.EnumValue.Оприходование</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ХозяйственнаяОперация_ОприходованиеТоваровКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ХозяйственнаяОперация_ОприходованиеТоваровExtendedTooltip" id="85"/>
+									<Events>
+										<Event name="StartChoice">ХозяйственнаяОперация_ОприходованиеТоваровНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ХозяйственнаяОперация_СписаниеТоваров" id="47">
+									<DataPath>Объект.ХозяйственнаяОперация_СписаниеТоваров</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Хозяйственная операция при списании товаров</v8:content>
+										</v8:item>
+									</Title>
+									<ChoiceParameters>
+										<app:item name="Отбор.КодХозяйственнойОперации">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Enum.КодыХозяйственныхОпераций.EnumValue.СписаниеНаЗатраты</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ХозяйственнаяОперация_СписаниеТоваровКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ХозяйственнаяОперация_СписаниеТоваровExtendedTooltip" id="86"/>
+									<Events>
+										<Event name="StartChoice">ХозяйственнаяОперация_СписаниеТоваровНачалоВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExchangePlanObject.ОбменУправлениеТорговлей_11_0_РозничнаяТорговля_1_0</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьНастройкиСоответствийАналитики" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить настройки соответствий аналитики</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить настройки соответствий аналитики</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьНастройкиСоответствийАналитики</Action>
+		</Command>
+	</Commands>
+</Form>

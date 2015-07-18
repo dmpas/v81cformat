@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="24">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаExtendedTooltip" id="26"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="27"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="28"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="НачислениеСписание" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.НачислениеСписание</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НачислениеСписаниеКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="НачислениеСписаниеКоманднаяПанель" id="15">
+				<ChildItems>
+					<Button name="НачислениеСписаниеЗаполнитьСписание" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьСписание</CommandName>
+						<Parameter xsi:nil="true"/>
+						<ExtendedTooltip name="НачислениеСписаниеЗаполнитьСписаниеExtendedTooltip" id="29"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="НачислениеСписаниеExtendedTooltip" id="30"/>
+			<SearchStringAddition name="НачислениеСписаниеSearchString" id="31">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="НачислениеСписаниеSearchStringContextMenu" id="32"/>
+				<ExtendedTooltip name="НачислениеСписаниеSearchStringExtendedTooltip" id="33"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НачислениеСписаниеViewStatus" id="34">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="НачислениеСписаниеViewStatusContextMenu" id="35"/>
+				<ExtendedTooltip name="НачислениеСписаниеViewStatusExtendedTooltip" id="36"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НачислениеСписаниеSearchControl" id="37">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="НачислениеСписаниеSearchControlContextMenu" id="38"/>
+				<ExtendedTooltip name="НачислениеСписаниеSearchControlExtendedTooltip" id="39"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="НачислениеСписаниеНомерСтроки" id="16">
+					<DataPath>Объект.НачислениеСписание.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачислениеСписаниеНомерСтрокиКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НачислениеСписаниеНомерСтрокиExtendedTooltip" id="40"/>
+				</LabelField>
+				<InputField name="НачислениеСписаниеПокупатель" id="18">
+					<DataPath>Объект.НачислениеСписание.Покупатель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачислениеСписаниеПокупательКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="НачислениеСписаниеПокупательExtendedTooltip" id="41"/>
+				</InputField>
+				<InputField name="НачислениеСписаниеСрокДействия" id="20">
+					<DataPath>Объект.НачислениеСписание.СрокДействия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачислениеСписаниеСрокДействияКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="НачислениеСписаниеСрокДействияExtendedTooltip" id="42"/>
+				</InputField>
+				<InputField name="НачислениеСписаниеСумма" id="22">
+					<DataPath>Объект.НачислениеСписание.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачислениеСписаниеСуммаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НачислениеСписаниеСуммаExtendedTooltip" id="43"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Ответственный" id="5">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="44"/>
+		</InputField>
+		<InputField name="Комментарий" id="7">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="45"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.КорректировкаНачисленныхБаллов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьСписание" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить списание</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Fill expense</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>tr</v8:lang>
+					<v8:content>Fill expense</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить списание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСписание</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.СоответствиеОбъектовДляОбмена.StandardCommand.OpenByValue.СобственнаяСсылка</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ОтложенныеДвиженияДокументов.StandardCommand.OpenByValue.Документ</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ОбъектыИнформационныхБаз.StandardCommand.OpenByValue.Объект</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ОбъектыЗапрещенныеДляРедактирования.StandardCommand.OpenByValue.Ссылка</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.КоллизииПриОбмене.StandardCommand.OpenByValue.СсылкаНаОбъект</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.КатегорииОбъектов.StandardCommand.OpenByValue.Объект</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ЗначенияСвойствОбъектов.StandardCommand.OpenByValue.Объект</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>FilterCriterion.СтруктураПодчиненности.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаExtendedTooltip" id="28"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="29"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="30"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="27">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="31"/>
+			<ChildItems>
+				<InputField name="ВидСкидки" id="11">
+					<DataPath>Объект.ВидСкидки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВидСкидкиКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ВидСкидкиExtendedTooltip" id="32"/>
+				</InputField>
+				<CheckBoxField name="РегламентноеПогашение" id="9">
+					<DataPath>Объект.РегламентноеПогашение</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РегламентноеПогашениеКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="РегламентноеПогашениеExtendedTooltip" id="33"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Скидки" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Скидки</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СкидкиКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="СкидкиКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="СкидкиExtendedTooltip" id="34"/>
+			<SearchStringAddition name="СкидкиSearchString" id="35">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СкидкиSearchStringContextMenu" id="36"/>
+				<ExtendedTooltip name="СкидкиSearchStringExtendedTooltip" id="37"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СкидкиViewStatus" id="38">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СкидкиViewStatusContextMenu" id="39"/>
+				<ExtendedTooltip name="СкидкиViewStatusExtendedTooltip" id="40"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СкидкиSearchControl" id="41">
+				<Source>
+					<lf:elementId>13</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СкидкиSearchControlContextMenu" id="42"/>
+				<ExtendedTooltip name="СкидкиSearchControlExtendedTooltip" id="43"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СкидкиНомерСтроки" id="16">
+					<DataPath>Объект.Скидки.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СкидкиНомерСтрокиКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="СкидкиНомерСтрокиExtendedTooltip" id="44"/>
+				</LabelField>
+				<InputField name="СкидкиСотрудник" id="18">
+					<DataPath>Объект.Скидки.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СкидкиСотрудникКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СкидкиСотрудникExtendedTooltip" id="45"/>
+				</InputField>
+				<InputField name="СкидкиПрофильСкидки" id="20">
+					<DataPath>Объект.Скидки.ПрофильСкидки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СкидкиПрофильСкидкиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СкидкиПрофильСкидкиExtendedTooltip" id="46"/>
+					<Events>
+						<Event name="OnChange">СкидкиПрофильСкидкиПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="СкидкиЛимит" id="22">
+					<DataPath>Объект.Скидки.Лимит</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СкидкиЛимитКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СкидкиЛимитExtendedTooltip" id="47"/>
+				</InputField>
+				<InputField name="СкидкиСрокДействия" id="24">
+					<DataPath>Объект.Скидки.СрокДействия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СкидкиСрокДействияКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="СкидкиСрокДействияExtendedTooltip" id="48"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Ответственный" id="5">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="49"/>
+		</InputField>
+		<InputField name="Комментарий" id="7">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="50"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.УстановкаОграниченийСкидокСотрудников</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодНаименование" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеExtendedTooltip" id="47"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="48"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="49"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="43">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="50"/>
+			<ChildItems>
+				<InputField name="Подсеть" id="11">
+					<DataPath>Объект.Подсеть</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПодсетьКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ПодсетьExtendedTooltip" id="51"/>
+				</InputField>
+				<InputField name="ПрефиксУзла" id="5">
+					<DataPath>Объект.ПрефиксУзла</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПрефиксУзлаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ПрефиксУзлаExtendedTooltip" id="52"/>
+				</InputField>
+				<InputField name="ДатаНачалаВыгрузкиДокументов" id="7">
+					<DataPath>Объект.ДатаНачалаВыгрузкиДокументов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаНачалаВыгрузкиДокументовКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ДатаНачалаВыгрузкиДокументовExtendedTooltip" id="53"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыExtendedTooltip" id="54"/>
+			<ChildItems>
+				<Page name="ГруппаМагазины" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Магазины</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаМагазиныExtendedTooltip" id="55"/>
+					<ChildItems>
+						<Table name="Магазины" id="17">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Магазины</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МагазиныКонтекстноеМеню" id="18"/>
+							<AutoCommandBar name="МагазиныКоманднаяПанель" id="19"/>
+							<ExtendedTooltip name="МагазиныExtendedTooltip" id="56"/>
+							<SearchStringAddition name="МагазиныSearchString" id="57">
+								<Source>
+									<lf:elementId>17</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="МагазиныSearchStringContextMenu" id="58"/>
+								<ExtendedTooltip name="МагазиныSearchStringExtendedTooltip" id="59"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МагазиныViewStatus" id="60">
+								<Source>
+									<lf:elementId>17</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="МагазиныViewStatusContextMenu" id="61"/>
+								<ExtendedTooltip name="МагазиныViewStatusExtendedTooltip" id="62"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МагазиныSearchControl" id="63">
+								<Source>
+									<lf:elementId>17</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="МагазиныSearchControlContextMenu" id="64"/>
+								<ExtendedTooltip name="МагазиныSearchControlExtendedTooltip" id="65"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="МагазиныНомерСтроки" id="20">
+									<DataPath>Объект.Магазины.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МагазиныНомерСтрокиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="МагазиныНомерСтрокиExtendedTooltip" id="66"/>
+								</LabelField>
+								<InputField name="МагазиныМагазин" id="22">
+									<DataPath>Объект.Магазины.Магазин</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МагазиныМагазинКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="МагазиныМагазинExtendedTooltip" id="67"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаМагазиныИнформативныхОстатков" id="24">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Магазины информативных остатков</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаМагазиныИнформативныхОстатковExtendedTooltip" id="68"/>
+					<ChildItems>
+						<InputField name="РежимВыгрузкиИнформативныхОстатков" id="9">
+							<DataPath>Объект.РежимВыгрузкиИнформативныхОстатков</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РежимВыгрузкиИнформативныхОстатковКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="РежимВыгрузкиИнформативныхОстатковExtendedTooltip" id="69"/>
+						</InputField>
+						<Table name="МагазиныИнформативныхОстатков" id="25">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.МагазиныИнформативныхОстатков</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МагазиныИнформативныхОстатковКонтекстноеМеню" id="26"/>
+							<AutoCommandBar name="МагазиныИнформативныхОстатковКоманднаяПанель" id="27"/>
+							<ExtendedTooltip name="МагазиныИнформативныхОстатковExtendedTooltip" id="70"/>
+							<SearchStringAddition name="МагазиныИнформативныхОстатковSearchString" id="71">
+								<Source>
+									<lf:elementId>25</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="МагазиныИнформативныхОстатковSearchStringContextMenu" id="72"/>
+								<ExtendedTooltip name="МагазиныИнформативныхОстатковSearchStringExtendedTooltip" id="73"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МагазиныИнформативныхОстатковViewStatus" id="74">
+								<Source>
+									<lf:elementId>25</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="МагазиныИнформативныхОстатковViewStatusContextMenu" id="75"/>
+								<ExtendedTooltip name="МагазиныИнформативныхОстатковViewStatusExtendedTooltip" id="76"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МагазиныИнформативныхОстатковSearchControl" id="77">
+								<Source>
+									<lf:elementId>25</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="МагазиныИнформативныхОстатковSearchControlContextMenu" id="78"/>
+								<ExtendedTooltip name="МагазиныИнформативныхОстатковSearchControlExtendedTooltip" id="79"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="МагазиныИнформативныхОстатковНомерСтроки" id="28">
+									<DataPath>Объект.МагазиныИнформативныхОстатков.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МагазиныИнформативныхОстатковНомерСтрокиКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="МагазиныИнформативныхОстатковНомерСтрокиExtendedTooltip" id="80"/>
+								</LabelField>
+								<InputField name="МагазиныИнформативныхОстатковМагазин" id="30">
+									<DataPath>Объект.МагазиныИнформативныхОстатков.Магазин</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МагазиныИнформативныхОстатковМагазинКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="МагазиныИнформативныхОстатковМагазинExtendedTooltip" id="81"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОтборНоменклатуры" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отбор номенклатуры</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОтборНоменклатурыExtendedTooltip" id="82"/>
+					<ChildItems>
+						<CheckBoxField name="ОтправлятьУдалениеЛишнейНоменклатуры" id="13">
+							<DataPath>Объект.ОтправлятьУдалениеЛишнейНоменклатуры</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтправлятьУдалениеЛишнейНоменклатурыКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ОтправлятьУдалениеЛишнейНоменклатурыExtendedTooltip" id="83"/>
+						</CheckBoxField>
+						<Table name="ОтборНоменклатуры" id="33">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ОтборНоменклатуры</DataPath>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОтборНоменклатурыКонтекстноеМеню" id="34"/>
+							<AutoCommandBar name="ОтборНоменклатурыКоманднаяПанель" id="35"/>
+							<ExtendedTooltip name="ОтборНоменклатурыExtendedTooltip" id="84"/>
+							<SearchStringAddition name="ОтборНоменклатурыSearchString" id="85">
+								<Source>
+									<lf:elementId>33</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="ОтборНоменклатурыSearchStringContextMenu" id="86"/>
+								<ExtendedTooltip name="ОтборНоменклатурыSearchStringExtendedTooltip" id="87"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОтборНоменклатурыViewStatus" id="88">
+								<Source>
+									<lf:elementId>33</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="ОтборНоменклатурыViewStatusContextMenu" id="89"/>
+								<ExtendedTooltip name="ОтборНоменклатурыViewStatusExtendedTooltip" id="90"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОтборНоменклатурыSearchControl" id="91">
+								<Source>
+									<lf:elementId>33</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="ОтборНоменклатурыSearchControlContextMenu" id="92"/>
+								<ExtendedTooltip name="ОтборНоменклатурыSearchControlExtendedTooltip" id="93"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОтборНоменклатурыНомерСтроки" id="36">
+									<DataPath>Объект.ОтборНоменклатуры.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборНоменклатурыНомерСтрокиКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ОтборНоменклатурыНомерСтрокиExtendedTooltip" id="94"/>
+								</LabelField>
+								<InputField name="ОтборНоменклатурыБрендНоменклатуры" id="38">
+									<DataPath>Объект.ОтборНоменклатуры.БрендНоменклатуры</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборНоменклатурыБрендНоменклатурыКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="ОтборНоменклатурыБрендНоменклатурыExtendedTooltip" id="95"/>
+								</InputField>
+								<InputField name="ОтборНоменклатурыТоварнаяГруппа" id="40">
+									<DataPath>Объект.ОтборНоменклатуры.ТоварнаяГруппа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОтборНоменклатурыТоварнаяГруппаКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ОтборНоменклатурыТоварнаяГруппаExtendedTooltip" id="96"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаКасса" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Касса</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Kassa</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>tr</v8:lang>
+							<v8:content>Kassa</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа касса</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаКассаExtendedTooltip" id="97"/>
+					<ChildItems>
+						<CheckBoxField name="НеОбновлятьКонфигурациюКассыАвтоматически" id="45">
+							<DataPath>Объект.НеОбновлятьКонфигурациюКассыАвтоматически</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеОбновлятьКонфигурациюКассыАвтоматическиКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="НеОбновлятьКонфигурациюКассыАвтоматическиExtendedTooltip" id="98"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExchangePlanObject.ПоМагазину</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

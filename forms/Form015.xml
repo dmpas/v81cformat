@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="18">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.StandardCommand.WriteAndClose</CommandName>
+				<Parameter xsi:nil="true"/>
+				<Picture>
+					<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьExtendedTooltip" id="60"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="19">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="61"/>
+			<ChildItems>
+				<UsualGroup name="Группа7" id="59">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа7ExtendedTooltip" id="62"/>
+					<ChildItems>
+						<Table name="Продавцы" id="7">
+							<Representation>List</Representation>
+							<DefaultItem>true</DefaultItem>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Продавцы</DataPath>
+							<Font ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПродавцыКонтекстноеМеню" id="8"/>
+							<AutoCommandBar name="ПродавцыКоманднаяПанель" id="9">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПродавцыExtendedTooltip" id="63"/>
+							<SearchStringAddition name="ПродавцыSearchString" id="64">
+								<Source>
+									<lf:elementId>7</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="ПродавцыSearchStringContextMenu" id="65"/>
+								<ExtendedTooltip name="ПродавцыSearchStringExtendedTooltip" id="66"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПродавцыViewStatus" id="67">
+								<Source>
+									<lf:elementId>7</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="ПродавцыViewStatusContextMenu" id="68"/>
+								<ExtendedTooltip name="ПродавцыViewStatusExtendedTooltip" id="69"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПродавцыSearchControl" id="70">
+								<Source>
+									<lf:elementId>7</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="ПродавцыSearchControlContextMenu" id="71"/>
+								<ExtendedTooltip name="ПродавцыSearchControlExtendedTooltip" id="72"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ПродавцыНомерСтроки" id="10">
+									<DataPath>Объект.Продавцы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПродавцыНомерСтрокиКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ПродавцыНомерСтрокиExtendedTooltip" id="73"/>
+								</LabelField>
+								<InputField name="ПродавцыПродавец" id="12">
+									<DataPath>Объект.Продавцы.Продавец</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПродавцыПродавецКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="ПродавцыПродавецExtendedTooltip" id="74"/>
+								</InputField>
+								<InputField name="ПродавцыВремяПрихода" id="14">
+									<DataPath>Объект.Продавцы.ВремяПрихода</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПродавцыВремяПриходаКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ПродавцыВремяПриходаExtendedTooltip" id="75"/>
+								</InputField>
+								<InputField name="ПродавцыВремяУхода" id="16">
+									<DataPath>Объект.Продавцы.ВремяУхода</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПродавцыВремяУходаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ПродавцыВремяУходаExtendedTooltip" id="76"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<UsualGroup name="Группа3" id="40">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3ExtendedTooltip" id="77"/>
+							<ChildItems>
+								<UsualGroup name="Группа4" id="45">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4ExtendedTooltip" id="78"/>
+									<ChildItems>
+										<Button name="КомандаЧас8" id="43">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>08:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас8ExtendedTooltip" id="79"/>
+										</Button>
+										<Button name="КомандаЧас9" id="42">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>09:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас9ExtendedTooltip" id="80"/>
+										</Button>
+										<Button name="КомандаЧас10" id="41">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>10:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас10ExtendedTooltip" id="81"/>
+										</Button>
+										<Button name="КомандаЧас11" id="44">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>11:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас11ExtendedTooltip" id="82"/>
+										</Button>
+										<Button name="КомандаЧас12" id="46">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>12:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас12ExtendedTooltip" id="83"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа5" id="47">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5ExtendedTooltip" id="84"/>
+									<ChildItems>
+										<Button name="КомандаЧас13" id="48">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>13:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас13ExtendedTooltip" id="85"/>
+										</Button>
+										<Button name="КомандаЧас14" id="49">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>14:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас14ExtendedTooltip" id="86"/>
+										</Button>
+										<Button name="КомандаЧас15" id="50">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>15:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас15ExtendedTooltip" id="87"/>
+										</Button>
+										<Button name="КомандаЧас16" id="51">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>16:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас16ExtendedTooltip" id="88"/>
+										</Button>
+										<Button name="КомандаЧас17" id="52">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>17:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас17ExtendedTooltip" id="89"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа6" id="53">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6ExtendedTooltip" id="90"/>
+									<ChildItems>
+										<Button name="КомандаЧас18" id="54">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>18:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас18ExtendedTooltip" id="91"/>
+										</Button>
+										<Button name="КомандаЧас19" id="55">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>19:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас19ExtendedTooltip" id="92"/>
+										</Button>
+										<Button name="КомандаЧас20" id="56">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>20:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас20ExtendedTooltip" id="93"/>
+										</Button>
+										<Button name="КомандаЧас21" id="57">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>21:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас21ExtendedTooltip" id="94"/>
+										</Button>
+										<Button name="КомандаЧас22" id="58">
+											<Type>UsualButton</Type>
+											<Width>8</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.КомандаЧас</CommandName>
+											<Parameter xsi:nil="true"/>
+											<Font ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>22:00</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаЧас22ExtendedTooltip" id="95"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа2" id="39">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2ExtendedTooltip" id="96"/>
+					<ChildItems>
+						<Table name="СписокПодбора" id="20">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>СписокПодбора</DataPath>
+							<RowPictureDataPath>СписокПодбора.DefaultPicture</RowPictureDataPath>
+							<Font ref="sys:DefaultGUIFont" height="12" kind="WindowsFont"/>
+							<SearchStringLocation>None</SearchStringLocation>
+							<ViewStatusLocation>None</ViewStatusLocation>
+							<SearchControlLocation>None</SearchControlLocation>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period xsi:type="v8:StandardPeriod">
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<ContextMenu name="СписокПодбораКонтекстноеМеню" id="21"/>
+							<AutoCommandBar name="СписокПодбораКоманднаяПанель" id="22">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокПодбораExtendedTooltip" id="97"/>
+							<SearchStringAddition name="СписокПодбораSearchString" id="98">
+								<Source>
+									<lf:elementId>20</lf:elementId>
+									<lf:additionId>0</lf:additionId>
+								</Source>
+								<ContextMenu name="СписокПодбораSearchStringContextMenu" id="99"/>
+								<ExtendedTooltip name="СписокПодбораSearchStringExtendedTooltip" id="100"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокПодбораViewStatus" id="101">
+								<Source>
+									<lf:elementId>20</lf:elementId>
+									<lf:additionId>1</lf:additionId>
+								</Source>
+								<ContextMenu name="СписокПодбораViewStatusContextMenu" id="102"/>
+								<ExtendedTooltip name="СписокПодбораViewStatusExtendedTooltip" id="103"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокПодбораSearchControl" id="104">
+								<Source>
+									<lf:elementId>20</lf:elementId>
+									<lf:additionId>2</lf:additionId>
+								</Source>
+								<ContextMenu name="СписокПодбораSearchControlContextMenu" id="105"/>
+								<ExtendedTooltip name="СписокПодбораSearchControlExtendedTooltip" id="106"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокПодбораВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СписокПодбораНаименование" id="29">
+									<DataPath>СписокПодбора.Description</DataPath>
+									<ContextMenu name="СписокПодбораНаименованиеКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="СписокПодбораНаименованиеExtendedTooltip" id="107"/>
+								</LabelField>
+								<LabelField name="СписокПодбораСсылка" id="37">
+									<DataPath>СписокПодбора.Ref</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="СписокПодбораСсылкаКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="СписокПодбораСсылкаExtendedTooltip" id="108"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВремяРаботыПродавцов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="СписокПодбора" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список подбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Edit>
+				<xr:Common>false</xr:Common>
+			</Edit>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ФизическиеЛица.Ссылка,
+	ФизическиеЛица.ВерсияДанных,
+	ФизическиеЛица.Родитель,
+	ФизическиеЛица.ЭтоГруппа,
+	ФизическиеЛица.Код,
+	ФизическиеЛица.Наименование,
+	МАКСИМУМ(РаботникиМагазинов.Магазин) КАК ТекущийМагазин
+ИЗ
+	РегистрСведений.РаботникиМагазинов КАК РаботникиМагазинов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица КАК ФизическиеЛица
+		ПО РаботникиМагазинов.ФизЛицо = ФизическиеЛица.Ссылка
+
+СГРУППИРОВАТЬ ПО
+	ФизическиеЛица.Ссылка,
+	ФизическиеЛица.ВерсияДанных,
+	ФизическиеЛица.Родитель,
+	ФизическиеЛица.ЭтоГруппа,
+	ФизическиеЛица.Код,
+	ФизическиеЛица.Наименование</QueryText>
+				<MainTable>Catalog.ФизическиеЛица</MainTable>
+				<ListSettings>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ТекущийМагазин</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+					</dcsset:item>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаЧас" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда час</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда час</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЧас</Action>
+		</Command>
+	</Commands>
+</Form>

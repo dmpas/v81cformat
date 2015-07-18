@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаВыбрать" id="8">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Choose</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаВыбратьExtendedTooltip" id="10"/>
+			</Button>
+			<Button name="СписокКнопкаВверх" id="6">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаВверх</CommandName>
+				<Parameter xsi:nil="true"/>
+				<Picture>
+					<xr:Ref>StdPicture.MoveUp</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="СписокКнопкаВверхExtendedTooltip" id="11"/>
+			</Button>
+			<Button name="СписокКнопкаВниз" id="7">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаВниз</CommandName>
+				<Parameter xsi:nil="true"/>
+				<Picture>
+					<xr:Ref>StdPicture.MoveDown</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="СписокКнопкаВнизExtendedTooltip" id="12"/>
+			</Button>
+			<Button name="ФормаКнопкаОтмена" id="9">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КнопкаОтмена</CommandName>
+				<Parameter xsi:nil="true"/>
+				<ExtendedTooltip name="ФормаКнопкаОтменаExtendedTooltip" id="13"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<CommandBarLocation>None</CommandBarLocation>
+			<ReadOnly>true</ReadOnly>
+			<DefaultItem>true</DefaultItem>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<ChoiceMode>true</ChoiceMode>
+			<SelectionMode>SingleRow</SelectionMode>
+			<Header>false</Header>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<Font ref="sys:DefaultGUIFont" height="16" bold="false" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="14"/>
+			<SearchStringAddition name="СписокSearchString" id="15">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="16"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="17"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="18">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="19"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="20"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="21">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="22"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="23"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="24"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ФизическиеЛица.Ссылка,
+	ФизическиеЛица.ВерсияДанных,
+	ФизическиеЛица.ПометкаУдаления,
+	ФизическиеЛица.Предопределенный,
+	ФизическиеЛица.Родитель,
+	ФизическиеЛица.ЭтоГруппа,
+	ФизическиеЛица.Код,
+	ФизическиеЛица.Наименование,
+	ФизическиеЛица.ДатаРождения,
+	МАКСИМУМ(РаботникиМагазинов.Магазин) КАК ТекущийМагазин
+ИЗ
+	РегистрСведений.РаботникиМагазинов КАК РаботникиМагазинов
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица КАК ФизическиеЛица
+		ПО РаботникиМагазинов.ФизЛицо = ФизическиеЛица.Ссылка
+{ГДЕ РаботникиМагазинов.Магазин КАК Магазин}
+СГРУППИРОВАТЬ ПО
+	ФизическиеЛица.Ссылка,
+	ФизическиеЛица.ВерсияДанных,
+	ФизическиеЛица.ПометкаУдаления,
+	ФизическиеЛица.Предопределенный,
+	ФизическиеЛица.Родитель,
+	ФизическиеЛица.ЭтоГруппа,
+	ФизическиеЛица.Код,
+	ФизическиеЛица.Наименование,
+	ФизическиеЛица.ДатаРождения</QueryText>
+				<MainTable>Catalog.ФизическиеЛица</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КнопкаВниз" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка вниз</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка вниз</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Shift+F9</Shortcut>
+			<Action>КнопкаВниз</Action>
+		</Command>
+		<Command name="КнопкаВверх" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка вверх</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка вверх</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Shift+F8</Shortcut>
+			<Action>КнопкаВверх</Action>
+		</Command>
+		<Command name="КнопкаОтмена" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена (F10)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>F10</Shortcut>
+			<Action>КнопкаОтмена</Action>
+		</Command>
+	</Commands>
+</Form>

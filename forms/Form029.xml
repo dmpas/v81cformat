@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодНаименование" id="176">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код наименование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодНаименованиеExtendedTooltip" id="209"/>
+			<ChildItems>
+				<InputField name="Наименование" id="3">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="210"/>
+				</InputField>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="211"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Группа1" id="177">
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="212"/>
+			<ChildItems>
+				<Page name="ГруппаОсновные" id="178">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаОсновныеExtendedTooltip" id="213"/>
+					<ChildItems>
+						<InputField name="УзелИнформационнойБазы" id="5">
+							<DataPath>Объект.УзелИнформационнойБазы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="УзелИнформационнойБазыExtendedTooltip" id="214"/>
+						</InputField>
+						<InputField name="ТипНастройки" id="179">
+							<DataPath>Объект.ТипНастройки</DataPath>
+							<ContextMenu name="ТипНастройкиКонтекстноеМеню" id="180"/>
+							<ExtendedTooltip name="ТипНастройкиExtendedTooltip" id="215"/>
+						</InputField>
+						<Pages name="Группа2" id="181">
+							<ExtendedTooltip name="Группа2ExtendedTooltip" id="216"/>
+							<ChildItems>
+								<Page name="ГруппаФайловыйОбмен" id="182">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Файловый обмен</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа файловый обмен</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаФайловыйОбменExtendedTooltip" id="217"/>
+									<ChildItems>
+										<InputField name="КаталогОбменаИнформацией" id="183">
+											<DataPath>Объект.КаталогОбменаИнформацией</DataPath>
+											<ContextMenu name="КаталогОбменаИнформациейКонтекстноеМеню" id="184"/>
+											<ExtendedTooltip name="КаталогОбменаИнформациейExtendedTooltip" id="218"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+								<Page name="ГруппаОбменFtp" id="185">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>FTP</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа обмен ftp</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаОбменFtpExtendedTooltip" id="219"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаАдресПорт" id="186">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа адрес порт</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа адрес порт</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаАдресПортExtendedTooltip" id="220"/>
+											<ChildItems>
+												<InputField name="FTPАдресОбмена" id="187">
+													<DataPath>Объект.FTPАдресОбмена</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Адрес</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="FTPАдресОбменаКонтекстноеМеню" id="188"/>
+													<ExtendedTooltip name="FTPАдресОбменаExtendedTooltip" id="221"/>
+												</InputField>
+												<InputField name="ПортFTPСоединения" id="189">
+													<DataPath>Объект.ПортFTPСоединения</DataPath>
+													<ContextMenu name="ПортFTPСоединенияКонтекстноеМеню" id="190"/>
+													<ExtendedTooltip name="ПортFTPСоединенияExtendedTooltip" id="222"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="ПользовательFTPСоединения" id="191">
+											<DataPath>Объект.ПользовательFTPСоединения</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Пользователь</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПользовательFTPСоединенияКонтекстноеМеню" id="192"/>
+											<ExtendedTooltip name="ПользовательFTPСоединенияExtendedTooltip" id="223"/>
+										</InputField>
+										<UsualGroup name="ГруппаПарольПассив" id="193">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль пассив</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа пароль пассив</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПарольПассивExtendedTooltip" id="224"/>
+											<ChildItems>
+												<InputField name="ПарольFTPСоединения" id="194">
+													<DataPath>Объект.ПарольFTPСоединения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Пароль</v8:content>
+														</v8:item>
+													</Title>
+													<PasswordMode>true</PasswordMode>
+													<ContextMenu name="ПарольFTPСоединенияКонтекстноеМеню" id="195"/>
+													<ExtendedTooltip name="ПарольFTPСоединенияExtendedTooltip" id="225"/>
+												</InputField>
+												<CheckBoxField name="ПассивноеFTPСоединение" id="196">
+													<DataPath>Объект.ПассивноеFTPСоединение</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ПассивноеFTPСоединениеКонтекстноеМеню" id="197"/>
+													<ExtendedTooltip name="ПассивноеFTPСоединениеExtendedTooltip" id="226"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="МаксимальныйРазмерОтправляемогоПакетаЧерезПочту" id="198">
+											<DataPath>Объект.МаксимальныйРазмерОтправляемогоПакетаЧерезПочту</DataPath>
+											<ContextMenu name="МаксимальныйРазмерОтправляемогоПакетаЧерезПочтуКонтекстноеМеню" id="199"/>
+											<ExtendedTooltip name="МаксимальныйРазмерОтправляемогоПакетаЧерезПочтуExtendedTooltip" id="227"/>
+										</InputField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<InputField name="ПарольНаПрием" id="202">
+							<DataPath>Объект.ПарольНаПрием</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль распаковки (при приёме)</v8:content>
+								</v8:item>
+							</Title>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольНаПриемКонтекстноеМеню" id="203"/>
+							<ExtendedTooltip name="ПарольНаПриемExtendedTooltip" id="228"/>
+						</InputField>
+						<UsualGroup name="ГруппаУпаковкаПароль" id="206">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа упаковка пароль</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа упаковка пароль</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУпаковкаПарольExtendedTooltip" id="229"/>
+							<ChildItems>
+								<CheckBoxField name="ВыполнятьАрхивациюФайловОбмена" id="204">
+									<DataPath>Объект.ВыполнятьАрхивациюФайловОбмена</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВыполнятьАрхивациюФайловОбменаКонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="ВыполнятьАрхивациюФайловОбменаExtendedTooltip" id="230"/>
+								</CheckBoxField>
+								<InputField name="ПарольНаОтправку" id="200">
+									<DataPath>Объект.ПарольНаОтправку</DataPath>
+									<PasswordMode>true</PasswordMode>
+									<ContextMenu name="ПарольНаОтправкуКонтекстноеМеню" id="201"/>
+									<ExtendedTooltip name="ПарольНаОтправкуExtendedTooltip" id="231"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="НеВыгружатьДанныеЕслиСуществуетФайлВыгрузки" id="123">
+							<DataPath>Объект.НеВыгружатьДанныеЕслиСуществуетФайлВыгрузки</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеВыгружатьДанныеЕслиСуществуетФайлВыгрузкиКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="НеВыгружатьДанныеЕслиСуществуетФайлВыгрузкиExtendedTooltip" id="232"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="207">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="208"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="233"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.НастройкиОбменаДанными</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаКассаНомер" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа касса номер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа касса номер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКассаНомерExtendedTooltip" id="13"/>
+			<ChildItems>
+				<InputField name="КассаККМ" id="1">
+					<DataPath>Запись.КассаККМ</DataPath>
+					<ContextMenu name="КассаККМКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КассаККМExtendedTooltip" id="14"/>
+				</InputField>
+				<InputField name="НомерЗаписи" id="11">
+					<DataPath>Запись.НомерЗаписи</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>N</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НомерЗаписиКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="НомерЗаписиExtendedTooltip" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Магазин" id="5">
+			<DataPath>Запись.Магазин</DataPath>
+			<ContextMenu name="МагазинКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="МагазинExtendedTooltip" id="16"/>
+		</InputField>
+		<InputField name="ПутьЗагрузки" id="3">
+			<DataPath>Запись.ПутьЗагрузки</DataPath>
+			<ContextMenu name="ПутьЗагрузкиКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ПутьЗагрузкиExtendedTooltip" id="17"/>
+		</InputField>
+		<UsualGroup name="ГруппаОтключить" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отключить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа отключить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтключитьExtendedTooltip" id="18"/>
+			<ChildItems>
+				<CheckBoxField name="Отключить" id="7">
+					<DataPath>Запись.Отключить</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтключитьКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ОтключитьExtendedTooltip" id="19"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ПутиЗагрузкиЧековNcr</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

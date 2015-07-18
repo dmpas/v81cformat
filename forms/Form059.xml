@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="ГруппаНомерДата" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаExtendedTooltip" id="23"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="24"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="25"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="План" id="9">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.План</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПланКонтекстноеМеню" id="10"/>
+			<AutoCommandBar name="ПланКоманднаяПанель" id="11"/>
+			<ExtendedTooltip name="ПланExtendedTooltip" id="26"/>
+			<SearchStringAddition name="ПланSearchString" id="27">
+				<Source>
+					<lf:elementId>9</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ПланSearchStringContextMenu" id="28"/>
+				<ExtendedTooltip name="ПланSearchStringExtendedTooltip" id="29"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПланViewStatus" id="30">
+				<Source>
+					<lf:elementId>9</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ПланViewStatusContextMenu" id="31"/>
+				<ExtendedTooltip name="ПланViewStatusExtendedTooltip" id="32"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПланSearchControl" id="33">
+				<Source>
+					<lf:elementId>9</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ПланSearchControlContextMenu" id="34"/>
+				<ExtendedTooltip name="ПланSearchControlExtendedTooltip" id="35"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПланНомерСтроки" id="12">
+					<DataPath>Объект.План.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПланНомерСтрокиКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ПланНомерСтрокиExtendedTooltip" id="36"/>
+				</LabelField>
+				<InputField name="ПланДень" id="14">
+					<DataPath>Объект.План.День</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПланДеньКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПланДеньExtendedTooltip" id="37"/>
+				</InputField>
+				<InputField name="ПланМагазин" id="16">
+					<DataPath>Объект.План.Магазин</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПланМагазинКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПланМагазинExtendedTooltip" id="38"/>
+				</InputField>
+				<InputField name="ПланСуммаПродаж" id="18">
+					<DataPath>Объект.План.СуммаПродаж</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПланСуммаПродажКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ПланСуммаПродажExtendedTooltip" id="39"/>
+				</InputField>
+				<InputField name="ПланСуммаПродажБезНДС" id="20">
+					<DataPath>Объект.План.СуммаПродажБезНДС</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПланСуммаПродажБезНДСКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПланСуммаПродажБезНДСExtendedTooltip" id="40"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Ответственный" id="5">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="41"/>
+		</InputField>
+		<InputField name="Комментарий" id="7">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="42"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПланПродажПоМагазинам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

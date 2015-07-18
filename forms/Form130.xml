@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1ExtendedTooltip" id="18"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Запись.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодExtendedTooltip" id="19"/>
+				</InputField>
+				<InputField name="Магазин" id="3">
+					<DataPath>Запись.Магазин</DataPath>
+					<ContextMenu name="МагазинКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="МагазинExtendedTooltip" id="20"/>
+				</InputField>
+				<InputField name="Ответственный" id="13">
+					<DataPath>Запись.Ответственный</DataPath>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОтветственныйExtendedTooltip" id="21"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="16">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2ExtendedTooltip" id="22"/>
+			<ChildItems>
+				<InputField name="Номенклатура" id="5">
+					<DataPath>Запись.Номенклатура</DataPath>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="НоменклатураExtendedTooltip" id="23"/>
+				</InputField>
+				<InputField name="Штрихкод" id="11">
+					<DataPath>Запись.Штрихкод</DataPath>
+					<ContextMenu name="ШтрихкодКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="ШтрихкодExtendedTooltip" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="17">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3ExtendedTooltip" id="25"/>
+			<ChildItems>
+				<InputField name="Цена" id="7">
+					<DataPath>Запись.Цена</DataPath>
+					<ContextMenu name="ЦенаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ЦенаExtendedTooltip" id="26"/>
+				</InputField>
+				<InputField name="ЦенаСтарая" id="9">
+					<DataPath>Запись.ЦенаСтарая</DataPath>
+					<ContextMenu name="ЦенаСтараяКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ЦенаСтараяExtendedTooltip" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ИсторияПечатиЦенников</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

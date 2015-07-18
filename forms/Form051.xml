@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period xsi:type="v8:StandardPeriod">
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="30"/>
+			<SearchStringAddition name="СписокSearchString" id="31">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchStringContextMenu" id="32"/>
+				<ExtendedTooltip name="СписокSearchStringExtendedTooltip" id="33"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокViewStatus" id="34">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокViewStatusContextMenu" id="35"/>
+				<ExtendedTooltip name="СписокViewStatusExtendedTooltip" id="36"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокSearchControl" id="37">
+				<Source>
+					<lf:elementId>1</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="СписокSearchControlContextMenu" id="38"/>
+				<ExtendedTooltip name="СписокSearchControlExtendedTooltip" id="39"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Наименование" id="4">
+					<DataPath>Список.Description</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеExtendedTooltip" id="40"/>
+				</LabelField>
+				<LabelField name="ТоварнаяГруппа" id="8">
+					<DataPath>Список.ТоварнаяГруппа</DataPath>
+					<ContextMenu name="ТоварнаяГруппаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ТоварнаяГруппаExtendedTooltip" id="41"/>
+				</LabelField>
+				<LabelField name="Тема" id="10">
+					<DataPath>Список.Тема</DataPath>
+					<ContextMenu name="ТемаКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ТемаExtendedTooltip" id="42"/>
+				</LabelField>
+				<LabelField name="РоялтиКод" id="12">
+					<DataPath>Список.РоялтиКод</DataPath>
+					<ContextMenu name="РоялтиКодКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="РоялтиКодExtendedTooltip" id="43"/>
+				</LabelField>
+				<LabelField name="Стиль" id="14">
+					<DataPath>Список.Стиль</DataPath>
+					<ContextMenu name="СтильКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СтильExtendedTooltip" id="44"/>
+				</LabelField>
+				<LabelField name="Посадка" id="16">
+					<DataPath>Список.Посадка</DataPath>
+					<ContextMenu name="ПосадкаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПосадкаExtendedTooltip" id="45"/>
+				</LabelField>
+				<LabelField name="ТоварнаяГруппаИМ" id="18">
+					<DataPath>Список.ТоварнаяГруппаИМ</DataPath>
+					<ContextMenu name="ТоварнаяГруппаИМКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ТоварнаяГруппаИМExtendedTooltip" id="46"/>
+				</LabelField>
+				<LabelField name="ПолИМ" id="20">
+					<DataPath>Список.ПолИМ</DataPath>
+					<ContextMenu name="ПолИМКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ПолИМExtendedTooltip" id="47"/>
+				</LabelField>
+				<LabelField name="НаименованиеИМ" id="22">
+					<DataPath>Список.НаименованиеИМ</DataPath>
+					<ContextMenu name="НаименованиеИМКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="НаименованиеИМExtendedTooltip" id="48"/>
+				</LabelField>
+				<LabelField name="ЦенаРозничная" id="24">
+					<DataPath>Список.ЦенаРозничная</DataPath>
+					<ContextMenu name="ЦенаРозничнаяКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ЦенаРозничнаяExtendedTooltip" id="49"/>
+				</LabelField>
+				<LabelField name="ДлинаРукава" id="26">
+					<DataPath>Список.ДлинаРукава</DataPath>
+					<ContextMenu name="ДлинаРукаваКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДлинаРукаваExtendedTooltip" id="50"/>
+				</LabelField>
+				<LabelField name="КоллекцияИМ" id="28">
+					<DataPath>Список.КоллекцияИМ</DataPath>
+					<ContextMenu name="КоллекцияИМКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="КоллекцияИМExtendedTooltip" id="51"/>
+				</LabelField>
+				<LabelField name="Код" id="6">
+					<DataPath>Список.Code</DataPath>
+					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="КодExtendedTooltip" id="52"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Модели</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

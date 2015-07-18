@@ -1,0 +1,33 @@
+table {
+	font-family: Arial, Helvetica;
+	font-size: medium;
+}
+
+.FormTable {
+	border: solid black 1px;
+	width: 100%;
+}
+
+.FormTableHeaderGroup {
+	border: 0px;
+}
+
+.FormTableHeaderGroupCell {
+	border: 0px;
+}
+
+.v__union {
+	padding: 0;
+	border: 0;
+}
+
+.FormTableHeader {
+	border-bottom: solid 1px black;
+	padding: 0;
+}
+
+.FormTableHeaderCell {
+	border-bottom: solid 1px black;
+	padding: 0;
+}
+

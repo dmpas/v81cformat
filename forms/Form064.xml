@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelField name="Магазин" id="5">
+			<DataPath>Объект.Магазин</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="МагазинКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="МагазинExtendedTooltip" id="19"/>
+		</LabelField>
+		<UsualGroup name="ГруппаНомерДата" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номер дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНомерДатаExtendedTooltip" id="20"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерExtendedTooltip" id="21"/>
+				</InputField>
+				<InputField name="Дата" id="3">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="22"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Продавцы" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Продавцы</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПродавцыКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ПродавцыКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="ПродавцыExtendedTooltip" id="23"/>
+			<SearchStringAddition name="ПродавцыSearchString" id="24">
+				<Source>
+					<lf:elementId>7</lf:elementId>
+					<lf:additionId>0</lf:additionId>
+				</Source>
+				<ContextMenu name="ПродавцыSearchStringContextMenu" id="25"/>
+				<ExtendedTooltip name="ПродавцыSearchStringExtendedTooltip" id="26"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПродавцыViewStatus" id="27">
+				<Source>
+					<lf:elementId>7</lf:elementId>
+					<lf:additionId>1</lf:additionId>
+				</Source>
+				<ContextMenu name="ПродавцыViewStatusContextMenu" id="28"/>
+				<ExtendedTooltip name="ПродавцыViewStatusExtendedTooltip" id="29"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПродавцыSearchControl" id="30">
+				<Source>
+					<lf:elementId>7</lf:elementId>
+					<lf:additionId>2</lf:additionId>
+				</Source>
+				<ContextMenu name="ПродавцыSearchControlContextMenu" id="31"/>
+				<ExtendedTooltip name="ПродавцыSearchControlExtendedTooltip" id="32"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПродавцыНомерСтроки" id="10">
+					<DataPath>Объект.Продавцы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродавцыНомерСтрокиКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПродавцыНомерСтрокиExtendedTooltip" id="33"/>
+				</LabelField>
+				<InputField name="ПродавцыПродавец" id="12">
+					<DataPath>Объект.Продавцы.Продавец</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродавцыПродавецКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ПродавцыПродавецExtendedTooltip" id="34"/>
+				</InputField>
+				<InputField name="ПродавцыВремяПрихода" id="14">
+					<DataPath>Объект.Продавцы.ВремяПрихода</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродавцыВремяПриходаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ПродавцыВремяПриходаExtendedTooltip" id="35"/>
+				</InputField>
+				<InputField name="ПродавцыВремяУхода" id="16">
+					<DataPath>Объект.Продавцы.ВремяУхода</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПродавцыВремяУходаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПродавцыВремяУходаExtendedTooltip" id="36"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ВремяРаботыПродавцов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
